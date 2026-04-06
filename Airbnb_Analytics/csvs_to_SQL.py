@@ -13,7 +13,7 @@ for file in glob.glob("*.csv"):
     df = pd.read_csv(file)
     
     # Create SQLAlchemy engine to connect to MySQL Database
-    engine = create_engine("mysql+mysqldb://root:D119a121n101d99A!@localhost:3306/airbnb")
+    engine = create_engine("mysql+mysqldb:@localhost:3306/airbnb")
 
     
     # Convert dataframe to sql table                                   
